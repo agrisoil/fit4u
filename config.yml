@@ -1,0 +1,70 @@
+baseURL: "https://agrinurture.us"
+languageCode: gu
+title: Fit4U
+paginate: 5
+theme: PaperMod
+googleAnalytics: G-2P8NXJCLJ8
+
+params:
+  showToc: true
+  TocOpen: false
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+  homeInfoParams:
+    Title: "નમસ્તે, "
+    Content: "AgriNurtureમાં આપનું સ્વાગત છે! અહીં તમને ખેતીની જમીન વિશે ઘણી બધી સરસ માહિતી મળશે. અમે ખેતીમાં વપરાતી માટીને લગતી માહિતી અને સંસાધનો પ્રદાન કરીએ છીએ. તે જમીનના પ્રકારો, જમીનની તંદુરસ્તી, માટી વ્યવસ્થાપન અને જેવા વિષયોને આવરી લે છે. જમીનનું સંરક્ષણ. એગ્રીસોઇલ એ ખેડૂતો, કૃષિ વ્યાવસાયિકો અને પાક ઉગાડવામાં અને પશુધનના ઉછેરમાં જમીનની ભૂમિકા વિશે વધુ જાણવામાં રસ ધરાવનાર કોઈપણ માટે મૂલ્યવાન સંસાધન છે."  # socialIcons:
+  #   - name: facebook
+  #     url: "https://facebook.com/"
+  #   - name: twitter
+  #     url: "https://twitter.com/"
+  #   - name: github
+  #     url: "https://github.com/"
+  cover:
+    linkFullImages: true
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+
+menu:
+  main:
+    # - identifier: home
+    #   name: Home
+    #   url: /
+      # weight: 10
+    - identifier: categories
+      name: શ્રેણીઓ
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: ટૅગ્સ
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: આર્કાઇવ્સ
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: શોધો
+      url: /search/
+      weight: 40
+    - identifier: contact
+      name: સંપર્ક
+      url: /contact/
+      weight: 50
+    - identifier: home
+      name: હોમ
+      url: /
+      weight: 60
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
